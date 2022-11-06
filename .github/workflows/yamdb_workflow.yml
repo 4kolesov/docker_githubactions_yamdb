@@ -55,7 +55,7 @@ jobs:
         with:
           context: ./api_yamdb/
           push: true
-          tags: 4kolesov/api_yamdb:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest
