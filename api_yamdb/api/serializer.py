@@ -8,7 +8,6 @@ from rest_framework.validators import UniqueValidator
 from reviews.models import Category, Comment, Genre, Review, Title, User
 from reviews.validators import max_year
 from users.validators import CorrectUsernameAndNotMe
-
 from .fields import (ToSerializerInSlugManyRelatedField,
                      ToSerializerInSlugRelatedField)
 
