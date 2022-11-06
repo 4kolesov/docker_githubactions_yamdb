@@ -71,7 +71,6 @@ jobs:
           script: |
             sudo docker-compose stop
             sudo docker-compose rm web
-            mkdir infra/
             cd infra/
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
