@@ -1,5 +1,7 @@
 ﻿
 https://github.com/4kolesov/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+
+
 ### REST API для YaMdB
 Документация: http://127.0.0.1/redoc/.
 ### Возможности:
@@ -21,7 +23,7 @@ https://github.com/4kolesov/yamdb_final/actions/workflows/yamdb_workflow.yml/bad
     POSTGRES_PASSWORD= # пароль для подключения к БД (установите свой)
     DB_HOST= # название сервиса (контейнера)
     DB_PORT= # порт для подключения к БД
-	
+
 
 ### Для запуска проекта в Docker:
 
@@ -61,4 +63,3 @@ https://github.com/4kolesov/yamdb_final/actions/workflows/yamdb_workflow.yml/bad
 Рабадан Ибрагимов — Категории, Жанры, Произведения, импорт из CSV в БД, Рейтинг Произведений, эндпоинты, разрешения.
 
 Александр Колесов — Регистрация и аутентификация пользователей, Роли, подтверждение через Email, выдача токена, эндпоинты, разрешения + контейнеризация!
-
