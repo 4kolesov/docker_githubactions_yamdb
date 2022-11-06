@@ -1,5 +1,4 @@
-# .github/workflows/**main.yml**
-name: Django-app workflow
+name: YaMDB Kolesov Ya.Practicum
 
 on: [push]
 
