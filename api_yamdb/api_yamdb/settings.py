@@ -12,12 +12,19 @@ SECRET_KEY = os.getenv('DJANGO_KEY', 'default-value')
 
 DEBUG = False
 
+# ALLOWED_HOSTS = [
+#     '127.0.0.1',
+#     'localhost',
+#     os.getenv('HOST_CONTAINER'),
+#     os.getenv('HOST_URL'),
+#     os.getenv('HOST'),
+# ]
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    os.getenv('HOST_CONTAINER'),
-    os.getenv('HOST_URL'),
-    os.getenv('HOST'),
+    'web',
+    '84.252.129.133',
+    'ynx69.hopto.org',
 ]
 
 
