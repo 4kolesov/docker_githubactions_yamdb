@@ -1,5 +1,3 @@
-# version: '1.29'
-
 services:
   db:
     image: postgres:latest
