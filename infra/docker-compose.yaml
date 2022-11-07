@@ -4,7 +4,7 @@ services:
     volumes:
       - db_value:/var/lib/postgresql/data/
     env_file:
-      - infra/.env
+      - /.env
   web:
     image: 4kolesov/api_yamdb:latest
     restart: always
@@ -14,7 +14,7 @@ services:
     depends_on:
       - db
     env_file:
-      - infra/.env
+      - /.env
 
   nginx:
     image: nginx:1.21.3-alpine
