@@ -9,5 +9,8 @@ PyJWT==2.1.0
 pytz==2020.1
 python-dotenv
 sqlparse==0.3.1
+# pytest-pythonpath==0.7.3
+# pytest-django
+pytest==6.2.4
+pytest-django==4.4.0
 pytest-pythonpath==0.7.3
-pytest-django
