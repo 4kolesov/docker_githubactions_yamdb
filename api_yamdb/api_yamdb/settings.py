@@ -15,9 +15,9 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'web',
-    '84.252.129.133',
-    'ynx69.hopto.org',
+    os.getenv('HOST_CONTAINER'),
+    os.getenv('HOST_URL'),
+    os.getenv('HOST'),
 ]
 
 

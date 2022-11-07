@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.7', '3.8', '3.9']
+        python-version: ['3.7', '3.8', '3.9', '3.10']
 
     steps:
     - uses: actions/checkout@v2
@@ -74,6 +74,9 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
+            echo HOST_URL=${{ secrets.HOST_URL }} >> .env
+            echo HOST=${{ secrets.HOST }} >> .env
+            echo HOST_CONTAINER=${{ secrets.HOST_CONTAINER }} >> .env
             sudo docker-compose up -d
 
   send_message:
