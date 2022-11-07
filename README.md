@@ -2,7 +2,7 @@
 ![example workflow](https://github.com/4kolesov/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
-### REST API для YaMdB
+### REST API для YaMdB!
 Документация: http://127.0.0.1/redoc/
 ### Возможности:
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
