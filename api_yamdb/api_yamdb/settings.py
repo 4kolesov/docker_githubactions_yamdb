@@ -19,14 +19,6 @@ ALLOWED_HOSTS = [
     os.getenv('HOST_URL'),
     os.getenv('HOST'),
 ]
-# ALLOWED_HOSTS = [
-#     '127.0.0.1',
-#     'localhost',
-#     'web',
-#     '84.252.129.133',
-#     'ynx69.hopto.org',
-# ]
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -94,18 +86,6 @@ DATABASES = {
 
 DATABASES['default'] = DATABASES['dev' if DEBUG else 'production']
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
-#         'NAME': os.getenv('DB_NAME', default='postgres'),
-#         'USER': os.getenv('POSTGRES_USER', default='postgres'),
-#         'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='postgres'),
-#         'HOST': os.getenv('DB_HOST', default='db'),
-#         'PORT': os.getenv('DB_PORT', default='5432')
-#     }
-# }
-
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -147,8 +127,10 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+if DEBUG:
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
