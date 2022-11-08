@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(ynx69.hopto.org www.ynx69.hopto.org)
+domains=(ynx69.hopto.org)
 rsa_key_size=4096
 data_path="./certbot"
 email="koreankore123anfo@yandex.com" # Adding a valid address is strongly recommended
