@@ -2,7 +2,7 @@
 ![example workflow](https://github.com/4kolesov/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
-### REST API для YaMdB!!!
+### REST API для YaMdB!!!!
 Ссылка — http://ynx69.hopto.org
 Документация: http://ynx69.hopto.org/redoc/
 ### Возможности:

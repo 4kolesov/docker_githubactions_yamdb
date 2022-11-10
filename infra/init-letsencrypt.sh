@@ -8,7 +8,7 @@ fi
 domains=(ynx69.hopto.org)
 rsa_key_size=4096
 data_path="./certbot"
-email="koreankore123anfo@yandex.com" # Adding a valid address is strongly recommended
+email="koreananfo@yandex.com" # Adding a valid address is strongly recommended
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
 if [ -d "$data_path" ]; then
